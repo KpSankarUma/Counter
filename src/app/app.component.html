@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Counter App</h1>
+    
+    <div class="card">
+      <p>Number is {{isEven}}</p><br>
+      <span>{{counter}}</span><br>
+
+      <button (click)="incr()" [disabled]="isDisabled" class="btn">+</button>
+      <button (click)="reset()" class="btn">Reset</button>
+      <button (click)="decr()" [disabled]="isZero" class="btn" >-</button>
+    </div>
+  </div>
+</body>
+</html>
